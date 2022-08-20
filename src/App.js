@@ -14,8 +14,8 @@ function App() {
     numCols = 50;
   }
   if (window.innerWidth <= 600) {
-    numRows = 25;
-    numCols = 25;
+    numRows = 12;
+    numCols = 12;
   }
 
   let neighbors;

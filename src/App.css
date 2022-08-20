@@ -40,14 +40,13 @@
 }
 
 @media only screen and (max-width: 600px) {
-  
   .boardContainer {
     border: 1px solid black;
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
     align-self: center;
     background: gray;
-    margin: 52px 0px 75px 0px;
+    margin: 136px 0px 75px 0px;
   }
   .buttonContainer {
     margin: 200px 0px 20px 0px;
