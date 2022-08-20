@@ -11,6 +11,7 @@ const ButtonBoard = ({
   setGrid,
   speed,
   setSpeed,
+  setGeneration,
 }) => {
   function refreshPage() {
     window.location.reload(false);
@@ -34,6 +35,8 @@ const ButtonBoard = ({
         <li>
           <button
             onClick={() => {
+              let newGen = 1;
+              console.log(newGen);
               const rows = [];
               for (let i = 0; i < numRows; i++) {
                 rows.push(
@@ -42,6 +45,8 @@ const ButtonBoard = ({
                   )
                 );
               }
+
+              setGeneration(newGen);
               setGrid(rows);
             }}
           >

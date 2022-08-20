@@ -174,6 +174,7 @@ function App() {
         runApp={runApp}
         speed={speed}
         setSpeed={setSpeed}
+        setGeneration={setGeneration}
       />
       <BoardContainer
         grid={grid}
