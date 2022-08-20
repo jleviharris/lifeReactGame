@@ -11,7 +11,7 @@ const BoardContainer = ({ grid, numCols, numRows, setGrid }) => {
   //     }
   //     return rows;
   //   });
-  console.log(grid);
+
   return (
     <div
       className="boardContainer"

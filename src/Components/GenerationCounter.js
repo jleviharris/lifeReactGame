@@ -1,11 +1,11 @@
 import React from "react";
 
-const GenerationCounter = () => {
+const GenerationCounter = ({ generation }) => {
   return (
     <div className="countConponent">
       <div className="countContainer">
         <h2>Generation</h2>
-        <h3>Count</h3>
+        <h3>{generation}</h3>
       </div>
     </div>
   );
