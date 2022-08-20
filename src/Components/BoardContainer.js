@@ -1,18 +1,16 @@
 import React from "react";
 import { useState } from "react";
 import produce from "immer";
+import { getNextGeneration } from "../game";
 
-const numRows = 50;
-const numCols = 50;
-
-const BoardContainer = () => {
-  const [grid, setGrid] = useState(() => {
-    const rows = [];
-    for (let i = 0; i < numRows; i++) {
-      rows.push(Array.from(Array(numCols), () => 0));
-    }
-    return rows;
-  });
+const BoardContainer = ({ grid, numCols, numRows, setGrid }) => {
+  //   const [grid, setGrid] = useState(() => {
+  //     const rows = [];
+  //     for (let i = 0; i < numRows; i++) {
+  //       rows.push(Array.from(Array(numCols), () => 0));
+  //     }
+  //     return rows;
+  //   });
   console.log(grid);
   return (
     <div
