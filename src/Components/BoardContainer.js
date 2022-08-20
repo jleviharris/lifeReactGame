@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import produce from "immer";
 
 const numRows = 50;
 const numCols = 50;
@@ -25,6 +26,12 @@ const BoardContainer = () => {
         rows.map((col, k) => (
           <div
             key={i - k}
+            onClick={() => {
+              const newGrid = produce(grid, (gridCopy) => {
+                gridCopy[i][k] = grid[i][k] ? 0 : 1;
+              });
+              setGrid(newGrid);
+            }}
             style={{
               width: 10,
               height: 10,
