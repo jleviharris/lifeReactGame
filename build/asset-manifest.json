@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c6ee64aa.css",
+    "main.js": "/static/js/main.c1f0d0e5.js",
+    "static/js/787.1dc84fb7.chunk.js": "/static/js/787.1dc84fb7.chunk.js",
+    "static/media/christopher-burns-dzejyfCAzIA-unsplash.jpg": "/static/media/christopher-burns-dzejyfCAzIA-unsplash.e73e0d80728e23db689c.jpg",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.c6ee64aa.css.map": "/static/css/main.c6ee64aa.css.map",
+    "main.c1f0d0e5.js.map": "/static/js/main.c1f0d0e5.js.map",
+    "787.1dc84fb7.chunk.js.map": "/static/js/787.1dc84fb7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c6ee64aa.css",
+    "static/js/main.c1f0d0e5.js"
+  ]
+}
