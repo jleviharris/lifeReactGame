@@ -9,6 +9,7 @@ import produce from "immer";
 function App() {
   let numCols;
   let numRows;
+
   if (window.innerWidth > 600) {
     numRows = 50;
     numCols = 50;

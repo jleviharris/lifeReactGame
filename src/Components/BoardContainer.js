@@ -39,7 +39,7 @@ const BoardContainer = ({
             style={{
               width: 10,
               height: 10,
-              backgroundColor: grid[i][k] ? "#F68E5F" : undefined,
+              backgroundColor: grid[i][k] ? "rgb(255 255 255)" : undefined,
               border: "1px solid #595959",
             }}
           />
