@@ -12,6 +12,8 @@ function App() {
   let neighbors;
   let gridCopy;
   const [generation, setGeneration] = useState(1);
+  const genRef = useRef(generation);
+  genRef.current = generation;
   const [speed, setSpeed] = useState(100);
   const speedRef = useRef(speed);
   speedRef.current = speed;
@@ -133,7 +135,8 @@ function App() {
   runningRef.current = running;
 
   const runApp = useCallback(() => {
-    let newGen = generation + 1;
+    let newGen = genRef.current + 1;
+    setGeneration(newGen);
     if (!runningRef.current) {
       return;
     }
@@ -156,7 +159,6 @@ function App() {
     });
 
     setTimeout(runApp, speedRef.current);
-    setGeneration(newGen);
   }, []);
 
   return (
@@ -184,6 +186,7 @@ function App() {
         setGrid={setGrid}
         numRows={numRows}
         numCols={numCols}
+        genRef={genRef}
       />
     </div>
   );
