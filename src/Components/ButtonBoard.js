@@ -28,7 +28,7 @@ const ButtonBoard = ({
               }
             }}
           >
-            {running ? "stop" : "start"}
+            {running ? "STOP" : "START"}
           </button>
         </li>
         <li>
@@ -45,7 +45,7 @@ const ButtonBoard = ({
               setGrid(rows);
             }}
           >
-            Random
+            RANDOM
           </button>
         </li>
         <li>
@@ -54,7 +54,7 @@ const ButtonBoard = ({
               setSpeed(750);
             }}
           >
-            Slow
+            SLOW
           </button>
         </li>
         <li>
@@ -63,11 +63,11 @@ const ButtonBoard = ({
               setSpeed(100);
             }}
           >
-            Fast
+            FAST
           </button>
         </li>
         <li>
-          <button onClick={refreshPage}>Reset</button>
+          <button onClick={refreshPage}>RESET</button>
         </li>
       </ul>
     </div>
