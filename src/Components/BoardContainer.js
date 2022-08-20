@@ -2,7 +2,14 @@ import React from "react";
 import { useState } from "react";
 import produce from "immer";
 
-const BoardContainer = ({ grid, numCols, numRows, setGrid }) => {
+const BoardContainer = ({
+  grid,
+  numCols,
+  numRows,
+  setGrid,
+  // setNumCols,
+  // setNumRows,
+}) => {
   //   const [grid, setGrid] = useState(() => {
   //     const rows = [];
   //     for (let i = 0; i < numRows; i++) {

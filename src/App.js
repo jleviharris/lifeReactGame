@@ -3,14 +3,24 @@ import "./App.css";
 import ButtonBoard from "./Components/ButtonBoard";
 import BoardContainer from "./Components/BoardContainer";
 import GenerationCounter from "./Components/GenerationCounter";
-import { useState, useCallback, useRef } from "react";
+import { useState, useCallback, useRef, useEffect } from "react";
 import produce from "immer";
 
 function App() {
-  const numRows = 50;
-  const numCols = 50;
+  let numCols;
+  let numRows;
+  if (window.innerWidth > 600) {
+    numRows = 50;
+    numCols = 50;
+  }
+  if (window.innerWidth <= 600) {
+    numRows = 25;
+    numCols = 25;
+  }
+
   let neighbors;
   let gridCopy;
+
   const [generation, setGeneration] = useState(1);
   const genRef = useRef(generation);
   genRef.current = generation;
@@ -181,6 +191,8 @@ function App() {
         setGrid={setGrid}
         numRows={numRows}
         numCols={numCols}
+        // setNumCols={setNumCols}
+        // setNumRows={setNumRows}
       />
       <GenerationCounter
         generation={generation}
