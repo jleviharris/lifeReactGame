@@ -41,7 +41,8 @@
 
 @media only screen and (max-width: 500px) {
   .App {
-    background: url("./images/mitch-harris-cPZ21gvclO8-unsplash.jpg");
+    background: url("./images/sina-bahar-7lBFJrqHcBY-unsplash.jpg");
+    background-size: cover;
   }
   .boardContainer {
     border: 1px solid black;
