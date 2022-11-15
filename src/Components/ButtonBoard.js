@@ -1,5 +1,4 @@
 import React from "react";
-import runApp from "../App";
 
 const ButtonBoard = ({
   runningRef,
@@ -9,7 +8,6 @@ const ButtonBoard = ({
   numRows,
   numCols,
   setGrid,
-  speed,
   setSpeed,
   setGeneration,
 }) => {

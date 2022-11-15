@@ -1,23 +1,11 @@
 import React from "react";
-import { useState } from "react";
 import produce from "immer";
 
 const BoardContainer = ({
   grid,
   numCols,
-  numRows,
   setGrid,
-  // setNumCols,
-  // setNumRows,
 }) => {
-  //   const [grid, setGrid] = useState(() => {
-  //     const rows = [];
-  //     for (let i = 0; i < numRows; i++) {
-  //       rows.push(Array.from(Array(numCols), () => 0));
-  //     }
-  //     return rows;
-  //   });
-
   return (
     <div
       className="boardContainer"
